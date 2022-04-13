@@ -50,16 +50,12 @@ let p2
 
 let lineColor = []
 
-let SecCnv = document.getElementById('_center')
-let x = SecCnv.clientWidth
-let y = SecCnv.clientHeight
 function setup() {
 
   //create a canvas and a camera
 
-  print(x)
-  print(y)
-  cnv = createCanvas(x, y, WEBGL);
+  
+  cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   cnv.parent("_center");
 
 

@@ -29,7 +29,8 @@
 
 html,
 body {
-    height: 100%;
+    height: auto;
+    width: auto;
 }
 
 
@@ -75,8 +76,6 @@ main {
     background-color: white;
     display: flex;
     flex-direction: row;
-    height: 70%;
-    width: auto;
     padding: 3px;
     box-shadow: 1px 1px 1px black;
     border: 0.5px solid black;
@@ -84,17 +83,15 @@ main {
 
 main aside._sides{
     background-color: var(--cor2);
-    width: 5%;
-    min-width: 150px;
-    min-height: 500px;
 }
 
-main aside._sideRight{
-    width: 5%;
+main aside#_sideRight{
+    width: 300;
 }
 
-main section#_center{
+body main section#_center{
     background-image: linear-gradient(to right, var(--cor0), var(--cor4));
+    height: auto;
     width: auto;
 }
 
@@ -111,11 +108,5 @@ body section#console {
 footer {
     background-color: var(--cor4);
     text-align: center;
-}
-
-
-body main section canvas#_center{    
-    height: 100%;
-    width: 100%; 
 }
 
